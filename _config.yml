@@ -1,0 +1,61 @@
+# Site settings
+title: byrage
+url: "https://byrage.github.io"
+baseurl: ""
+description: >
+
+# My information
+email: byrage91@gmail.com
+author: byrage
+profile: ?
+github_username: byrage
+comment-support: utterances
+
+# Build settings
+plugins:
+  - jekyll-paginate
+  - jekyll-gist
+
+permalink: /blog/:year/:month/:day/:title/
+
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+paginate: 10
+paginator_path: "/blog"
+paginate_path: "/blog/page:num/"
+
+# Collections
+collections:
+    wiki:
+        output: true
+        permalink: /:collection/:path/
+
+# Comment Service
+disqus:
+  id: byrage
+  shortname: byrage
+utterances:
+  repo: byrage/byrage.github.io
+  issue-term: pathname
+  label: Comment
+  branch: master
+
+google_analytics:
+  ua: UA-110224147-1
+
+google_adsense:
+  client: ca-pub-3675948545737694
+
+blame: "https://github.com/byrage/byrage.github.io/blame/master/_wiki"
+edit: "https://github.com/byrage/byrage.github.io/edit/master/_wiki"
+issue: "https://github.com/byrage/byrage.github.io/issues/new"
+
+timezone: "Asia/Seoul"
+
+# https://kramdown.gettalong.org/rdoc/Kramdown/Options.html - smart_quotes
+kramdown:
+    smart_quotes: ["apos", "apos", "quot", "quot"]
