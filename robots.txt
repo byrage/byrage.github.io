@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://byrage.github.io/sitemap.xml
